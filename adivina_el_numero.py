@@ -1,36 +1,15 @@
-numero_usuario = int(input("Estoy pensando en un numero.¿Puedes adivinarlo? : "))
-numero_que_pienso = 7
+otro_intento = "True"
+numero_elegido = ""
+numero_a_adivinar = input("¿Que numero quieres que adivine tu amigo?: ")
 
-if numero_usuario == numero_que_pienso:
-    print("Que bueno eres tio!")
-else:
-    print("Te has equivocado tio! Vuelve a intentarlo.")
+while otro_intento == "True":
 
-numero_usuario = int(input("Dime el numero: "))
+    if numero_elegido != numero_a_adivinar:
+        numero_elegido = input("¿Que numero crees que ha puesto el tonto de tu amigo?: ")
 
-if numero_usuario == numero_que_pienso:
-    print("Que bueno eres tio!")
-else:
-    print("Te has equivocado tio! Vuelve a intentarlo.")
+    if numero_elegido == numero_a_adivinar:
+        print("Que listo!! O que poco inteligente es tu colega xDD De todas formas... ¡¡FELICIDADES!!")
+        otro_intento = "False"
 
-numero_usuario = int(input("Dime el numero: "))
 
-if numero_usuario == numero_que_pienso:
-    print("Que bueno eres tio!")
-else:
-    print("Te has equivocado tio! Vuelve a intentarlo.")
-
-numero_usuario = int(input("Dime el numero: "))
-
-if numero_usuario == numero_que_pienso:
-    print("Que bueno eres tio!")
-else:
-    print("Te has equivocado tio! Vuelve a intentarlo.")
-
-numero_usuario = int(input("Dime el numero: "))
-
-if numero_usuario == numero_que_pienso:
-    print("Que bueno eres tio!")
-else:
-    print("Te has equivocado tio! Lo siento pero fallas demasiado")
 
